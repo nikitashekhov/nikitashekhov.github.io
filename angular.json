@@ -22,8 +22,7 @@
             "assets": [
               "src/favicon32.png",
               "src/assets",
-              "CNAME",
-              "README.md"
+              "src/CNAME"
             ],
             "styles": [
               "src/styles.less"
@@ -89,8 +88,7 @@
             "assets": [
               "src/favicon32.png",
               "src/assets",
-              "CNAME",
-              "README.md"
+              "src/CNAME"
             ],
             "styles": [
               "src/styles.less"
