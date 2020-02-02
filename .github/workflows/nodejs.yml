@@ -18,7 +18,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install
-    - run: npm run deploy --name="Nikita Shekhov" --email=shehov.n@gmail.com
+    - run: npm run ng deploy --name="Nikita Shekhov" --email=shehov.n@gmail.com
       env:
         CI: true
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
