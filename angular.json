@@ -25,7 +25,7 @@
               "src/CNAME"
             ],
             "styles": [
-              "src/styles.less"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -91,7 +91,7 @@
               "src/CNAME"
             ],
             "styles": [
-              "src/styles.less"
+              "src/styles.scss"
             ],
             "scripts": []
           }
@@ -131,7 +131,7 @@
   "defaultProject": "nikitashekhovgithub",
   "schematics": {
     "@schematics/angular:component": {
-      "styleext": "less"
+      "styleext": "scss"
     }
   }
 }

@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~carbon-components/scss/globals/scss/styles.scss";
+$font-path: '~carbon-components/src/globals/fonts';
+
+.container-800 {
+  max-width: 800px;
+  margin: $layout-04 auto;
+  padding: $spacing-02;
+}

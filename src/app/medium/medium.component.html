@@ -1,0 +1,15 @@
+<h2 class="posts">Recent Posts</h2>
+<ibm-structured-list [border]="false" [condensed]="false" [nowrap]="false">
+  <ibm-list-header>
+    <ibm-list-column nowrap="true">Date</ibm-list-column>
+    <ibm-list-column nowrap="true">Title</ibm-list-column>
+  </ibm-list-header>
+  <ibm-list-row *ngFor="let post of posts">
+    <ibm-list-column>{{post.date}}</ibm-list-column>
+    <ibm-list-column nowrap="true">
+      <a href="{{post.link}}">
+        <h4>{{post.title}}</h4>
+      </a>
+    </ibm-list-column>
+  </ibm-list-row>
+</ibm-structured-list>
