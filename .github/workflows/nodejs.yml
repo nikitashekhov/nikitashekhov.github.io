@@ -1,6 +1,9 @@
 name: Node.js CI
 
-on: [push]
+on: 
+  push:
+    branches: 
+      - master
 
 jobs:
   build:
@@ -13,12 +16,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+    - name: Angular Deploy gh-pages Actions
+      uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.3.1
       with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm install
-    - run: npm run ng deploy --repo=https://github.com/nikitashekhov/nikitashekhov.com.git --name="Nikita Shekhov" --email=shehov.n@gmail.com
-      env:
-        CI: true
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        github_access_token: ${{ secrets.GH_TOKEN }}
+        build_configuration: production
+        base_href: /
+        deploy_branch: gh-pages
+        angular_dist_build_folder: /
